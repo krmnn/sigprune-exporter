@@ -17,8 +17,6 @@ type DashboardPanelTarget struct {
 }
 
 type DashboardPanel struct {
-	// ID is usually a number, but some dashboards (e.g. provisioned or
-	// hand-edited JSON) store it as a string.
 	ID      json.RawMessage        `json:"id"`
 	UID     string                 `json:"uid"`
 	Title   string                 `json:"title"`
